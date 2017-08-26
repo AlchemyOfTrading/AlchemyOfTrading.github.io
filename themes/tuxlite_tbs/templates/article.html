@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} - {{ article.title }}{% endblock %}
+{% block content %}
+    <div class='article'>
+        <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a561fda60405000131c1b37&product=sticky-share-buttons"></script>
+
+        <div class="content-title" style="padding-left:5ex">
+            <h1>{{ article.title }}</h1>
+            {% include "metadata.html" %}
+        </div>
+	
+        <div style="margin-left:-1em; padding-left:5ex" class="span10" >{{ article.content }}</div>
+	
+        <hr>
+
+        {% if DISQUS_SITENAME %}
+        <div style="padding-left:5ex">
+            <h2>Comments</h2>
+            {% include "disqus.html" %}
+        </div>
+
+        {% endif %}
+    </div>
+{% endblock %}

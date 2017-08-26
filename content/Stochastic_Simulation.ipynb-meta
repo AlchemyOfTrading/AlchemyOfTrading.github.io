@@ -1,0 +1,7 @@
+Title: Simulation of Stochastic Differential Equations
+Slug: Simulation/SDE_Theory
+Date: 2016-06-08 20:00
+Category: Simulation
+Tags: simulation, brownian motion, stochastic differential equation, Euler-Murayama method, Milstein method, Strong approximation, Weak approximation
+author: Tamaghna Roy
+Summary: Post about simulation of SDE which is the first step in understanding stochastic properties results
